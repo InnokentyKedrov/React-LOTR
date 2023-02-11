@@ -1,0 +1,98 @@
+.search__container {
+  display: flex;
+  gap: 1rem;
+
+  height: 4rem;
+}
+
+.search__input,
+.search__button {
+  padding: 1rem;
+
+  font-size: 2rem;
+  color: var(--main-color);
+
+  background-color: #000;
+  border: 2px solid var(--main-color);
+  border-radius: 0.5rem;
+}
+
+.search__input {
+  width: 20rem;
+}
+
+.search__button {
+  padding-right: 1.3rem;
+}
+
+.search__input:hover,
+.search__button:hover {
+  box-shadow: 0 0 1rem var(--main-color);
+}
+
+.search__input:focus {
+  font-family: Tangerine, cursive;
+}
+
+.search__button:hover {
+  cursor: pointer;
+
+  color: var(--main-color);
+}
+
+/* ------------------------ */
+
+.search__range {
+  display: flex;
+}
+
+.search__range_label {
+  font-size: 2rem;
+}
+
+.search__range_wrapper {
+  display: flex;
+  flex-direction: column;
+
+  width: 15rem;
+  margin-left: auto;
+}
+
+.search__range_input {
+  background-color: #000;
+  border: 2px solid var(--main-color);
+  border-radius: 1rem;
+  outline: none;
+
+  appearance: none;
+}
+
+.search__range_input::-webkit-slider-thumb {
+  width: 5rem;
+  height: 2rem;
+
+  background-color: var(--main-color);
+  border-radius: 1rem;
+
+  appearance: none;
+}
+
+.search__range_datalist {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0 1rem -1rem 0.5rem;
+
+  font-size: 2rem;
+}
+
+.search__range_option {
+  padding: 0;
+}
+
+.search__range_input:hover,
+.search__range_input::-webkit-slider-thumb:hover {
+  cursor: pointer;
+
+  box-shadow: 0 0 1rem var(--main-color);
+}

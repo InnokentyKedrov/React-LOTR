@@ -1,0 +1,7 @@
+.notfound__container {
+  height: var(--main-height);
+
+  background-image: url("../../assets/not_found.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

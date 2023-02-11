@@ -1,0 +1,7 @@
+.about__container {
+  height: var(--main-height);
+
+  background-image: url("../../assets/about.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
