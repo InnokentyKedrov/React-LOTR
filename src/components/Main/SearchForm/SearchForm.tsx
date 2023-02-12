@@ -70,17 +70,19 @@ const SearchForm: React.FC<Props> = (props): ReactElement => {
         </div>
       </div>
 
-      <input
-        className={styles.search__input}
-        type="text"
-        defaultValue={localStorage.getItem('search') || ''}
-        onChange={handleSearchChange}
-        placeholder="🔍 Enter text"
-        autoComplete="on"
-      ></input>
-      <button className={styles.search__button} type="submit">
-        Search
-      </button>
+      <div className={styles.search__input_wrapper}>
+        <input
+          className={styles.search__input}
+          type="text"
+          defaultValue={localStorage.getItem('search') || ''}
+          onChange={handleSearchChange}
+          placeholder="🔍 Enter text"
+          autoComplete="on"
+        ></input>
+        <button className={styles.search__button} type="submit">
+          Search
+        </button>
+      </div>
     </form>
   );
 };

@@ -25,6 +25,7 @@
   align-items: center;
 
   width: 400px;
+  margin-bottom: 1rem;
   padding: 1rem;
 
   font-size: 2rem;
@@ -37,8 +38,7 @@
   z-index: 1;
 
   height: 4rem;
-  margin: 0;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
   padding: 0;
 
   font-size: 4rem;
@@ -85,7 +85,7 @@
   position: absolute;
   top: 2rem;
   left: -3rem;
-  transform: rotate(-53deg);
+  transform: rotate(-54deg);
 }
 
 .modal__item_image {
@@ -114,4 +114,16 @@
 
 .modal__item_link {
   color: inherit;
+}
+
+@media (max-width: 420px) {
+  .modal__item {
+    width: 300px;
+  }
+
+  .modal__item_race {
+    top: 1rem;
+    left: -1.5rem;
+    transform: rotate(-51deg);
+  }
 }

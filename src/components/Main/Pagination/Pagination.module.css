@@ -1,7 +1,8 @@
 .pagination__container {
+  position: relative;
   display: flex;
-  gap: 2rem;
   align-items: center;
+  margin-top: 1rem;
 
   height: var(--pagination-height);
 }
@@ -132,8 +133,29 @@
 }
 
 .pagination__error {
-  height: 2rem;
+  position: absolute;
+  padding: 2rem;
+  width: 320px;
+  text-align: center;
 
-  font-size: 1.5rem;
+  font-size: 2rem;
+  line-height: 2.5rem;
   color: #df2b2b;
+  background-color: #000;
+}
+
+@media (max-width: 600px) {
+  .pagination__container {
+    flex-direction: column;
+  }
+
+  .pagination__list {
+    padding: 0;
+    margin: 0;
+  }
+
+  .pagination__error {
+    width: 300px;
+    top: 0;
+  }
 }

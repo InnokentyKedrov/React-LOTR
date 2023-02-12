@@ -1,11 +1,9 @@
 .loading {
   transform: rotate();
 
-  width: var(--list-height);
-  height: var(--list-height);
-  margin: 3rem auto;
-
-  font-size: 3rem;
+  width: calc(var(--list-height) - 4rem);
+  height: calc(var(--list-height) - 4rem);
+  margin: 2rem auto;
 
   background-image: url("../../assets/ring.png");
   background-repeat: no-repeat;
@@ -39,25 +37,18 @@
 }
 
 .cards__list {
+  width: 100%;
   overflow-y: scroll;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 400px);
+  justify-content: center;
+  grid-gap: 2rem;
 
   height: var(--list-height);
-  margin: 3rem auto;
-  padding: 0;
-  padding-top: 2rem;
+  margin: 0;
+  padding: 2rem;
 
   list-style-type: none;
-}
-
-.cards__item_hidden {
-  width: 400px;
-  height: 0;
-
-  visibility: hidden;
 }
 
 .cards__searchEmpty,
@@ -73,4 +64,21 @@
 
 .cards__serverError {
   background-image: url("../../assets/server_error.jpg");
+}
+
+@media (max-width: 960px) {
+  .cards__list {
+    grid-template-columns: repeat(auto-fit, 300px);
+  }
+}
+
+@media (max-width: 420px) {
+  .main__container {
+    padding: 0.5rem;
+  }
+  
+  .cards__list {
+    padding: 1.5rem;
+    grid-template-columns: repeat(auto-fit, 250px);
+  }
 }

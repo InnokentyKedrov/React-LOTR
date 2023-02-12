@@ -18,9 +18,9 @@
   --main-color: #f08c1e;
   --header-height: 5rem;
   --pagination-height: 6rem;
-  --search-height: 4rem;
+  --search-height: 5rem;
   --main-height: calc(100vh - var(--header-height));
-  --list-height: calc(var(--main-height) - var(--search-height) - var(--pagination-height) - 8rem);
+  --list-height: calc(var(--main-height) - var(--search-height) - var(--pagination-height) - 4rem);
 }
 
 *,
@@ -59,4 +59,20 @@ body {
 ::-webkit-scrollbar-thumb {
   background-color: var(--main-color);
   border-radius: 50%;
+}
+
+@media (max-width: 780px) {
+  :root {
+    --search-height: 11rem;
+  }
+}
+
+@media (max-width: 600px) {
+  :root {
+    --pagination-height: 10rem;
+  }
+
+  html {
+    font-size: 14px;
+  }
 }

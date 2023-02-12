@@ -1,10 +1,16 @@
+.header {
+  text-align: center;
+}
+
 .header__container {
   display: flex;
+  margin: 0;
   gap: 2rem;
   justify-content: center;
 
   height: var(--header-height);
   padding: 1rem;
+  list-style-type: none;
 
   color: #0ff;
 }

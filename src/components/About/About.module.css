@@ -3,5 +3,6 @@
 
   background-image: url("../../assets/about.jpg");
   background-repeat: no-repeat;
+  background-position: center;
   background-size: contain;
 }

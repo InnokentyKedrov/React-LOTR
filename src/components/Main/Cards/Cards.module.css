@@ -46,8 +46,8 @@
 
   position: absolute;
   top: 2rem;
-  left: -5rem;
-  transform: rotate(-55deg);
+  left: -4.5rem;
+  transform: rotate(-54deg);
 
   width: 10rem;
 
@@ -80,4 +80,34 @@
 
 .cards__item_link {
   color: inherit;
+}
+
+@media (max-width: 960px) {
+  .cards__item {
+    width: 300px;
+  }
+
+  .cards__item_title {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 420px) {
+  .cards__item {
+    width: 250px;
+  }
+
+  .cards__item_title {
+    font-size: 1em;
+  }
+
+  .cards__item_race {
+    top: 1rem;
+    transform: rotate(-51deg);
+  }
+
+  .cards__item_image {
+    width: 200px;
+    height: 200px;
+  }
 }

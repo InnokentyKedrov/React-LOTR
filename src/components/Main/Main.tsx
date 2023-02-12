@@ -32,11 +32,6 @@ const Main: React.FC = (): ReactElement => {
           {state.stateCharacters.map((el: CharactersType) => (
             <Cards card={el} key={el._id} />
           ))}
-          <li className={styles.cards__item_hidden}></li>
-          <li className={styles.cards__item_hidden}></li>
-          <li className={styles.cards__item_hidden}></li>
-          <li className={styles.cards__item_hidden}></li>
-          <li className={styles.cards__item_hidden}></li>
         </ul>
       )}
 

@@ -147,7 +147,7 @@ const Pagination: React.FC<{ sortData: () => void }> = (props): ReactElement => 
           </button>
         </li>
       </ul>
-      <span className={styles.pagination__error}>{error}</span>
+      {error && <span className={styles.pagination__error}>{error}</span>}
     </section>
   );
 };
