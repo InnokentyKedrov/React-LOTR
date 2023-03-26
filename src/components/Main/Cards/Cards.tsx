@@ -24,7 +24,7 @@ const Cards: React.FC<{ card: CharactersType }> = (props): ReactElement => {
         <h2 className={styles.cards__item_title}>Minor character</h2>
       )}
       <NavLink className={styles.cards__item_container} to="/modal" end>
-        <span className={styles.cards__item_race}>{props.card.race}</span>
+        {/* <span className={styles.cards__item_race}>{props.card.race}</span> */}
         <img className={styles.cards__item_image} src={cardsImage(props.card.race)}></img>
       </NavLink>
     </li>
