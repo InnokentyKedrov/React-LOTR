@@ -1,8 +1,6 @@
 .loading {
-  transform: rotate();
-
-  width: calc(var(--list-height) - 4rem);
-  height: calc(var(--list-height) - 4rem);
+  width: calc(var(--list-height) - 10rem);
+  height: calc(var(--list-height) - 10rem);
   margin: 2rem auto;
 
   background-image: url("../../assets/ring.png");
@@ -29,24 +27,25 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 
-  height: var(--content-height);
+  height: var(--main-height);
   padding: 1rem;
 
   color: var(--main-color);
 }
 
 .cards__list {
-  width: 100%;
+  overflow-x: hidden;
   overflow-y: scroll;
   display: grid;
   grid-template-columns: repeat(auto-fit, 400px);
   justify-content: center;
-  grid-gap: 2rem;
 
+  width: 100%;
   height: var(--list-height);
   margin: 0;
-  padding: 2rem;
+  padding: 4rem;
 
   list-style-type: none;
 }
@@ -57,18 +56,21 @@
   height: var(--list-height);
   margin: 3rem auto;
 
-  background-image: url("../../assets/nothing_found.jpg");
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.cards__searchEmpty {
+  background-image: url("../../assets/nothing_found.jpg");
 }
 
 .cards__serverError {
   background-image: url("../../assets/server_error.jpg");
 }
 
-@media (max-width: 960px) {
+@media (max-width: 965px) {
   .cards__list {
-    grid-template-columns: repeat(auto-fit, 300px);
+    row-gap: 3rem;
   }
 }
 
@@ -76,9 +78,10 @@
   .main__container {
     padding: 0.5rem;
   }
-  
+
   .cards__list {
-    padding: 1.5rem;
     grid-template-columns: repeat(auto-fit, 250px);
+
+    padding: 1.5rem;
   }
 }

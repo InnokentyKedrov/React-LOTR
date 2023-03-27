@@ -20,7 +20,7 @@
   --pagination-height: 6rem;
   --search-height: 4rem;
   --main-height: calc(100vh - var(--header-height));
-  --list-height: calc(var(--main-height) - var(--search-height) - var(--pagination-height) - 8rem);
+  --list-height: calc(var(--main-height) - var(--search-height) - var(--pagination-height) - 6rem);
 }
 
 *,
@@ -59,4 +59,17 @@ body {
 ::-webkit-scrollbar-thumb {
   background-color: var(--main-color);
   border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+  :root {
+    --pagination-height: 10.5rem;
+    --search-height: 8rem;
+  }
+}
+
+@media (max-width: 420px) {
+  :root {
+    --list-height: calc(var(--main-height) - var(--search-height) - var(--pagination-height) - 4rem);
+  }
 }

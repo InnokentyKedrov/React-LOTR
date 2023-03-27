@@ -4,15 +4,15 @@
 
 .header__container {
   display: flex;
-  margin: 0;
   gap: 2rem;
   justify-content: center;
 
   height: var(--header-height);
+  margin: 0;
   padding: 1rem;
-  list-style-type: none;
 
   color: #0ff;
+  list-style-type: none;
 }
 
 .header__link,
