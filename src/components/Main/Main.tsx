@@ -24,9 +24,9 @@ const Main: React.FC = (): ReactElement => {
     <main className={styles.main__container}>
       <SearchForm sortData={sortData} />
 
-      {state.status === 'loading' && <span className={styles.loading}></span>}
-      {state.status === 'serverError' && <div className={styles.cards__serverError}></div>}
-      {state.status === 'notFound' && <div className={styles.cards__searchEmpty}></div>}
+      {state.status === 'loading' && <span className={styles.loading} />}
+      {state.status === 'serverError' && <div className={styles.cards__serverError} />}
+      {state.status === 'notFound' && <div className={styles.cards__searchEmpty} />}
       {state.status === 'resolved' && (
         <ul className={styles.cards__list}>
           {state.stateCharacters.map((el: CharactersType) => (

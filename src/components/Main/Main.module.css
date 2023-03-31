@@ -72,6 +72,11 @@
   .cards__list {
     row-gap: 3rem;
   }
+
+  .cards__searchEmpty,
+  .cards__serverError {
+    width: 100%;
+  }
 }
 
 @media (max-width: 420px) {
