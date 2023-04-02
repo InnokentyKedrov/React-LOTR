@@ -52,7 +52,7 @@
 
 .cards__searchEmpty,
 .cards__serverError {
-  width: calc(var(--list-height) / 9 * 16);
+  width: calc(var(--list-height) / 10 * 16);
   height: var(--list-height);
   margin: 3rem auto;
 

@@ -68,6 +68,7 @@
 
 .login__date_button {
   position: absolute;
+  z-index: -1;
   top: 0;
   left: 0;
 
@@ -78,10 +79,9 @@
   width: 100%;
   height: 100%;
 
-  background-image: url("../../assets/humans.png");
+  background-image: url("../../assets/birth_day.jpg");
   background-repeat: no-repeat;
   background-position: center right;
-  background-size: 50%;
   border: 2px solid var(--main-color);
   border-radius: 0.5rem;
   outline: none;
@@ -200,11 +200,13 @@
   display: flex;
   flex-direction: column;
 
-  width: 15rem;
+  width: 12rem;
   margin-left: auto;
 }
 
 .login__range_input {
+  padding: 0 3px;
+
   background-color: #000;
   border: 2px solid var(--main-color);
   border-radius: 1rem;
@@ -215,7 +217,7 @@
 
 .login__range_input::-webkit-slider-thumb {
   width: 5rem;
-  height: 2rem;
+  height: 1rem;
 
   background-color: var(--main-color);
   border-radius: 1rem;
@@ -232,10 +234,6 @@
   font-size: 2rem;
 }
 
-.login__range_option {
-  padding: 0;
-}
-
 /* ------------------------ */
 
 .login__label_file {
@@ -246,10 +244,10 @@
 
   font-size: 2rem;
 
-  background-image: url("../../assets/fone2.jpg");
+  background-image: url("../../assets/humans.png");
   background-repeat: no-repeat;
   background-position: right;
-  background-size: cover;
+  background-size: contain;
   border: 2px solid var(--main-color);
   border-radius: 0.5rem;
   outline: none;
@@ -320,9 +318,5 @@
   .login__label_file,
   .login__date {
     font-size: 1.5rem;
-  }
-
-  .login__label_file {
-    background-size: 120%;
   }
 }
